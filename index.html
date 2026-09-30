@@ -7,11 +7,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Шапка з навігацією -->
-    <!-- Форма додавання книги -->
-    <!-- Список книг (картки з автором і статусом) -->
-    <!-- Блок статистики читання -->
-    <!-- Підвал -->
+    <header>
+    <h1>Трекер прочитаних книг</h1>
+    <nav>
+        <a href="#add-book">Додати нову книгу</a>
+        <a href="#my-books">Мої книги</a>
+    </nav>
+    </header>
+    <main>
+        <section id="add-book">
+            <h2>Додати книгу</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="book-title">Назва книги:</label>
+                    <input type="text" id="book-title" name="title" placeholder="Наприклад: Кайдашева сімʼя">
+                </div>
+                <div>
+                    <label for="book-author">Автор:</label>
+                    <input type="text" id="book-author" name="author" placeholder="Наприклад: Іван Нечуй-Левицький">
+                </div>
+                <div>
+                    <label for="book-status">Статус:</label>
+                    <select id="book-status" name="status">
+                    <option value="done">Прочитано</option>
+                    <option value="reading">В процесі</option>
+                    <option value="planning">Планую</option>
+                    </select>
+                </div>
+                <button type="submit">Додати</button>
+            </form>
+        </section>
+        <section id="my-books"></section>
+        <h2>Мої книги</h2>
+        <article>
+            <h3>Тіні забутих предків</h3>
+            <p><strong>Автор:</strong>Михайло Коцюбинский</p>
+            <p><strong>Статус:</strong>Прочитано</p>
+        </article>
+        <article>
+            <h3>Заповіт</h3>
+            <p><strong>Автор:</strong>Тарас Шевченко</p>
+            <p><strong>Статус:</strong>Читаю</p>
+        </article>
+    </main>
+    <aside>
+        <h2>Статистика читання</h2>
+        <ul>
+            <li>Прочитано: 1</li>
+            <li>В процесі: 1</li>
+            <li>В планах: 0</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; Сіненко Євген Сергійович, ФІОТ, ІП-53, 2026, Трекер прочитаних книг</p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
