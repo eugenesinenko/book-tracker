@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c221e;
+    background-color: #fcf9f2;
+}
+
+header {
+    background-color: #5c3d2e;
+    color: #fcf9f2;
+    padding: 1.5rem 2rem;
+    border-bottom: 4px solid #8b5a2b;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    color: #e8d8c8;
+    text-decoration: none;
+    margin-right: 1.25rem;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    color: #5c3d2e;
+    border-bottom: 2px solid #e2d7c5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+form {
+    background-color: #f4ede2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2d7c5;
+}
+
+form div {
+    margin-bottom: 1.25rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #422a1d;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #c8b9a6;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #2c221e;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+    outline: none;
+    border-color: #8b5a2b;
+    box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.2);
+}
+
+form button {
+    background-color: #8b5a2b;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5c3d2e;
+}
+
+.book-card {
+    display: flex;
+    gap: 1.25rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #e2d7c5;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.book-cover {
+    width: 120px;
+    height: 160px;
+    background-color: #d6c5b0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c3d2e;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #5c3d2e;
+}
+
+.book-card p {
+    margin: 0.25rem 0;
+}
+
+aside {
+    max-width: 850px;
+    margin: 0 auto 2.5rem auto;
+    padding: 1.25rem;
+    background-color: #eae0d0;
+    border-radius: 8px;
+    border-left: 5px solid #8b5a2b;
+}
+
+aside h2 {
+    margin-top: 0;
+    color: #5c3d2e;
+    font-size: 1.25rem;
+}
+
+aside ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+aside li {
+    margin-bottom: 0.4rem;
+}
+
+footer {
+    background-color: #2c221e;
+    color: #a89888;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin: 0;
+}
