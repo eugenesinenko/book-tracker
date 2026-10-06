@@ -12,16 +12,31 @@ body {
     background-color: #fcf9f2;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     background-color: #5c3d2e;
     color: #fcf9f2;
     padding: 1.5rem 2rem;
     border-bottom: 4px solid #8b5a2b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 header h1 {
-    margin: 0 0 0.5rem 0;
+    margin: 0;
     font-size: 2rem;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 header nav a {
@@ -36,10 +51,13 @@ header nav a:hover {
     color: #ffffff;
 }
 
-main {
+.layout-wrapper {
     max-width: 850px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 section {
@@ -105,6 +123,12 @@ form button:hover {
     background-color: #5c3d2e;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .book-card {
     display: flex;
     gap: 1.25rem;
@@ -112,7 +136,6 @@ form button:hover {
     padding: 1rem;
     border-radius: 6px;
     border: 1px solid #e2d7c5;
-    margin-bottom: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -147,8 +170,6 @@ form button:hover {
 }
 
 aside {
-    max-width: 850px;
-    margin: 0 auto 2.5rem auto;
     padding: 1.25rem;
     background-color: #eae0d0;
     border-radius: 8px;
@@ -180,4 +201,31 @@ footer {
 
 footer p {
     margin: 0;
+}
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .book-cover {
+        width: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    .layout-wrapper{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        max-width: 1200px;
+    }
+    .cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
